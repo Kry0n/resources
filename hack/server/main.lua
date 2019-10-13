@@ -6,10 +6,12 @@ RegisterServerEvent('hack:hackatm')
 AddEventHandler('hack:hackatm', function()
     local src = source
     local xPlayer = ESX.GetPlayerFromId(src)
-    local randomMoney = math.random(500, 2500)
-	
+    local randomMoney = math.random(1, 5)
+	--local tablet = xPlayer.getInventoryItem('tablet').count
+        --if tablet >= 1 then
         xPlayer.addMoney(randomMoney)
         TriggerClientEvent('esx:showNotification', src, 'You stole some change and recieved $' .. randomMoney .. '!')
+    	--end
     end)
 	
 	

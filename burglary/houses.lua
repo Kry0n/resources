@@ -1,4 +1,4 @@
--- This file contains all houses, doors and spawn locations
+-- might make it a system where if they wake up they call but you also have like a 25% chance to trigger a silent alarmhis file contains all houses, doors and spawn locations
 
 houses = {
 	{
@@ -16,6 +16,44 @@ houses = {
 		pickups = {
 			{
 				coord = vec3(262.0387, -1000.613, -99.2985), -- location of pickup
+				model = "prop_pap_camera_01", -- model https://objects.gt-mp.net/index.php
+				rotation = 20.0,
+				value = 150.0 -- the money which the item is worth
+			},
+			{
+				coord = vec3(258.414, -996.7075, -99.5623),
+				model = "prop_cash_case_02",
+				rotation = 200.0,
+				value = 250.0
+			},
+			{
+				coord = vec3(259.7399, -1003.679, -100.008),
+				model = "prop_amp_01",
+				rotation = 150.0,
+				value = 100.0
+			}
+		},
+		-- area around the house
+		area = {
+			vec3(266.961, -1007.903, -102.139),
+			vec3(253.130, -993.894, -96.411)
+		}
+	},
+	{
+		ipl = "hei_hw1_blimp_interior_v_studio_lo_milo_",
+		-- coords of entry point
+		coords = {
+			x = 1251.2,
+			y = -515.69,
+			z = 69.35,
+			heading = 74.23
+		},
+		-- coords of marker/exit point
+		door = vec3(1251.2, -515.69, 69.35),
+		-- pickups inside house
+		pickups = {
+			{
+				coord = vec3(1251.2, -515.69, 69.35), -- location of pickup
 				model = "prop_pap_camera_01", -- model https://objects.gt-mp.net/index.php
 				rotation = 20.0,
 				value = 150.0 -- the money which the item is worth

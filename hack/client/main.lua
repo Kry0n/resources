@@ -17,7 +17,6 @@ Citizen.Wait(5)
             'prop_atm_02',
 			'prop_atm_03',
 			'prop_fleeca_atm',
-      '3424098598'
         })
 	
         if distance ~= -1 and distance <= 1.3 then
@@ -26,10 +25,9 @@ Citizen.Wait(5)
 			
 
 					local atmCoords = GetEntityCoords(entitty)
+          local tablet = xPlayer.getInventoryItem('tablet')
 					ESX.Game.Utils.DrawText3D({ x = atmCoords.x, y = atmCoords.y, z = atmCoords.z + 1.5 }, '[H] Hack ATM', 0.4)
-                    ESX.TriggerServerCallback('hack:anycops', function(anycops)
-                    if anycops >= Config.CopsRequired then
-                    if IsControlJustReleased(0, 74) then
+                    if IsControlJustReleased(0, 74) and xPlayer.getInventoryItem('tablet').count >= 1 then
                     if lastatm ~= entitty then
                        lastatm = entitty
                        OpemAtm()
@@ -38,10 +36,7 @@ Citizen.Wait(5)
                     else
                         ESX.ShowNotification('You\'ve already attempted to hack this machine')
                     end
-                  end
-                end
-              end
-end)
+end
             else
                 Citizen.Wait(500)
             end
@@ -85,8 +80,8 @@ function OpemAtm()
   end)
 
 end)
-	exports['progressBars']:startUI(180000, "Hacking ATM...") ---This is the part you add
-    Citizen.Wait(1800000)
+	exports['progressBars']:startUI(5000, "Hacking ATM...") ---This is the part you add
+    Citizen.Wait(5000)
     TriggerServerEvent('hack:hackatm')
 	FreezeEntityPosition(PlayerPedId(), false)
     ClearPedTasksImmediately(PlayerPedId())

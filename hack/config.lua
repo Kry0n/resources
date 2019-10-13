@@ -1,1 +1,0 @@
-Config.CopsRequired       = 0

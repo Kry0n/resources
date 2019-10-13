@@ -119,7 +119,7 @@ CreateThread(function()
 				if Vdist(coords, door.coords.x, door.coords.y, door.coords.z) < 2 then
 					DisplayHelpText("Press ~INPUT_CONTEXT~ to enter this house.")
 					
-					if IsControlJustPressed(0, 51) then
+					if IsControlJustPressed(0, 74) then
 						local house = houses[door.house]
 						
 						SetEntityCoords(PlayerPedId(), house.coords.x, house.coords.y, house.coords.z)

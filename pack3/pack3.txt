@@ -1,0 +1,13 @@
+Toyota supra			- a80			- 99942_a80_modkit
+mitsubishi evo 6		- evo6			- 99943_evo6_modkit
+mitsubishi evo 10		- evo10			- 99944_evo10_modkit
+subaru impreza wrx		- sim22			- 99945_sim22_modkit
+nissan skyline r32		- r32			- 99946_r32_modkit
+honda civic fk8			- fk8			- 99947_fk8_modkit
+honda civic spoon		- eg6			- 99948_eg6_modkit
+mazda rx7 veilside		- vsrx7			- 99949_vsrx7_modkit
+nissan gtr			- gtr			- 99950_gtr_modkit
+honda s2000			- ap2			- 99951_ap2_modkit
+mazda rx7 spiritr		- fd			- 99952_fd_modkit
+mazda mx5			- na6			- 99953_na6_modkit
+nissan skyline gtr r34		- r34gtr		- 99954_r34gtr_modkit

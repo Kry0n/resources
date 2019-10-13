@@ -195,7 +195,7 @@ end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
 end)
 
-TriggerEvent('es:addGroupCommand', 'clearall', 'admin', function(source, args, user)
+TriggerEvent('es:addGroupCommand', 'clearall', 'mod', function(source, args, user)
 	TriggerClientEvent('chat:clear', -1)
 end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
